@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zudio - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Zudio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="cart-total">0</span></p>
+        <button id="clear-cart">Clear Cart</button>
+
+        <div id="payment-options">
+            <h3>Payment options</h3>
+            <label>
+                <input type="radio" name="payment" value="credit-card">
+                Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="debit-card">
+                Debit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="upi">
+                UPI
+            </label>
+        </div>
+
+        <button id="checkout">Checkout</button>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>

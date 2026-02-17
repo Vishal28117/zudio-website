@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Zudio Inspired Fashion</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Zudio Style</div>
+  <nav>
+    <a onclick="filterProducts('all')">Home</a>
+    <a onclick="filterProducts('men')">Men</a>
+    <a onclick="filterProducts('women')">Women</a>
+    <a onclick="filterProducts('kids')">Kids</a>
+    <a onclick="filterProducts('offers')">Offers</a>
+  </nav>
+  <a href="cart.html" class="cart">Cart: <span id="cartCount">0</span></a>
+</header>
+
+<section class="banner">
+  <h1>Minimal Fashion. Maximum Style.</h1>
+</section>
+
+<div class="categories">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('men')">Men</button>
+  <button onclick="filterProducts('women')">Women</button>
+  <button onclick="filterProducts('kids')">Kids</button>
+  <button onclick="filterProducts('offers')">Offers</button>
+</div>
+
+<section class="products" id="productContainer"></section>
+
+<footer>
+  © 2026 Zudio Inspired Fashion UI. Designed with AI.
+</footer>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.getElementById('cartCount').innerText = cart.length;
+    });
+</script>
+
+</body>
+</html>

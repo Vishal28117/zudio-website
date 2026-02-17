@@ -1,0 +1,10 @@
+body{font-family:'Poppins',sans-serif}
+.payment-container{max-width:820px;margin:28px auto;padding:20px;background:#fff;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+.order-list{border-bottom:1px solid #eee;padding-bottom:10px;margin-bottom:12px}
+.order-row{display:flex;justify-content:space-between;padding:8px 0}
+.form-row{margin-bottom:10px}
+.form-row label{display:block;margin-bottom:6px}
+.form-row input, .form-row select{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
+.form-actions{display:flex;gap:12px;align-items:center}
+.form-actions .secondary{color:#666;text-decoration:none}
+@media(max-width:600px){.payment-container{margin:12px;padding:12px}}

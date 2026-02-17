@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payment - Zudio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Zudio Style</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="payment-container">
+    <h2>Complete Payment</h2>
+
+    <section id="order-summary" class="order-summary">
+      <!-- order items rendered here -->
+    </section>
+
+    <form id="payment-form">
+      <div class="form-row">
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method">
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+          <option value="upi">UPI</option>
+          <option value="netbanking">Net Banking</option>
+        </select>
+      </div>
+
+      <div id="payment-fields"></div>
+
+      <div class="form-row total-row">Total: ₹<span id="payment-total">0</span></div>
+
+      <div class="form-actions">
+        <button type="button" id="pay-now">Pay Now</button>
+        <a href="cart.html" class="secondary">Back to cart</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="payment.js"></script>
+</body>
+</html>

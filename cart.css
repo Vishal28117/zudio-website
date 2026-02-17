@@ -1,0 +1,36 @@
+#cart-container {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#payment-options {
+    margin-top: 20px;
+}
+
+#payment-options h3 {
+    margin-bottom: 10px;
+}
+
+#payment-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#checkout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkout:hover {
+    background-color: #0056b3;
+}
